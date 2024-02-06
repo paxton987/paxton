@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="open" id="litters">
+    <button onclick="findvowel()"></button>
+    <div id="display"></div>
+</body>
+</html>
+<script>
+    let ar=['a', 'e','i','o','u']
+    let litters=document.getElementById("litters")
+    let display=document.getElementById('display')
+    function findvowel(){
+        let vowels=litters.value.split('')
+       vowels.forEach(function(element){
+        if (ar.includes(element)) {
+            display.innerHTML=('found'+ar.length)
+
+           
+            
+        }
+        
+       });
+    }
+</script>

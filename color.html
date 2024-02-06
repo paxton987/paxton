@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="color" id="color" onchange="changecolor()">
+    <h1 id="display">Hello</h1> -->
+    <input type="password" id="showt">
+    <button id="texts" onclick="anything()">show</button>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+
+
+
+    <script>
+        // function changecolor(){
+        //     let input=document.getElementById("color")
+        //     let text=document.getElementById("display")
+        //     text.style.color=input.value
+        // }
+        function anything(){
+            let show_=document.getElementById("showt")
+            let texts= document.getElementById("texts")
+            
+
+            if(showt.type == 'text'){
+                showt.type = 'password'
+                texts.innerHTML='show'
+            }else{
+                showt.type='text'
+
+                texts.innerHTML='hide'
+            }
+            
+
+
+             
+        }
+    </script>
+</body>
+</html>

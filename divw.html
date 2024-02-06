@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="showvowel">
+    <button onclick="greet()">check</button>
+    <h1 id="h"></h1>
+
+</body>
+</html>
+<script>
+    let  names=['a', 'e', 'i', 'o', 'u']
+    let myarrer=[]
+    let showvowel=document.getElementById("showvowel")
+    let h=document.getElementById("h")
+    function greet(){
+        let  vowels=showvowel.value.split('') 
+        vowels.forEach(function(element) {
+            if (names.includes(element)) {
+             if (myarrer.includes(element)) {
+                
+             }else{
+                myarrer.push(element)
+             }   
+            }
+            
+        });
+        h.innerHTML=('found ' + myarrer.length + ' vowel and they are ' + myarrer)
+    }
+    
+
+</script>

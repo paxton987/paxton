@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body1{
+    background-color: rgba(0, 0, 0, 0.219);
+    width: 30%;
+    height: 85vh;
+    margin: 50px auto;
+}
+
+.head1{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 0 20px;
+
+}
+.head1 img{
+   width: 25px;
+   margin-top: 10px;
+}
+.head1 p{
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+.head2{
+    margin: 0 0 0 150px;
+    gap: 20px;
+    display: flex;
+    align-items: end;
+}
+.head3{
+    margin: 30px 0 0 20px;
+    display: flex;
+    gap: 10px;
+}
+.head3 h5{
+   font-size: 23px;
+}
+.head4{
+    width: 100%;
+    color: black;
+    height: 10vh;
+    /* background-color: aqua; */
+    font-size: 20px;
+   text-align: right;
+}
+.head42{
+    width: 100%;
+    color: black;
+    height: 10vh;
+    /* background-color: aqua; */
+    font-size: 40px;
+   text-align: right;
+}
+
+.head5{
+ display: flex;
+}
+.head5 button{
+    width: 20%;
+    height: 40px;
+    background: none;
+    border: none;
+}
+.each{
+    width: 23%;
+    height: 7vh;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    
+}
+.cover{
+    width:100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.219);
+    justify-content: space-between;
+}
+.each button{
+
+    width: 100%;
+    border: none;
+    background: none;
+
+}

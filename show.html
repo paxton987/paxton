@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="adds">
+    <button onclick="grett()">Add</button>
+    <div id="display"></div>
+
+
+<script>
+    let names=[]
+    let adds = document.getElementById('adds')
+    let displayIt = document.getElementById('display')
+    let =remove1=document.getElementById('remove1')
+    function grett(){
+        names.push(adds.value)
+
+        show()
+       
+       
+    }
+    function show(){
+        displayIt.innerHTML = ''
+        for (let index = 0; index < names.length; index++) {
+            displayIt.innerHTML +=`<h1>${names[index]}    <button onclick="removeNames(${index})">remove</button></h1>`
+           
+            
+        }
+    }
+
+    function removeNames(index){
+        names.splice(index,1)
+        show()
+    }
+    // function removeNames(){
+    //     let remove1=document.getElementById("remove1")
+    //     let displayIt=document.getElementById("display")
+    //     for (let index = 0; index < names.length; index++) {
+    //         if (names[index].toLowerCase()== remove1.value.toLowerCase()){
+    //             names.splice(index,1)
+    //         }
+            
+    //     }
+           
+    //         show()
+    //     }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="adds">
+    <button onclick="myadd()">Add</button>
+    <input type="text" name="" id="removes">
+    <button onclick="mydelete()">rwemove</button>
+     <div id="display"></div>
+     
+
+
+
+
+
+
+
+
+
+
+    <script>
+      let myarrer=[]
+      function myadd(){
+        myarrer.push(adds.value)
+        go()
+      }
+      function go(){
+        display.innerHTML=''
+        for (let index = 0; index < myarrer.length; index++) {
+           display.innerHTML+=`<h1>${myarrer[index]}</h1>`
+            
+        }
+      }
+     function mydelete(){
+        let removes=document.getElementById('removes')
+        for (let index = 0; index < myarrer.length; index++) {
+            if (myarrer[index].toLowerCase()== removes.value.toLowerCase()) {
+                myarrer.splice(index,1)
+                
+            }
+           
+            
+        }
+        go()
+     }
+    
+
+      
+
+    </script>
+
+</body>
+</html>
